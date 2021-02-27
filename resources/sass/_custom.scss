@@ -1,0 +1,72 @@
+                body {
+                    font-family: 'Poppins';
+                }
+                
+                .form-control:focus {
+                    box-shadow: none;
+                }
+                
+                //chekbox
+                .s3-checkbox {
+                    display: inline-block;
+                    position: relative;
+                    padding-left: 0px;
+                    text-align: left;
+                    margin: 0px;
+                    cursor: pointer;
+                    font-size: 1rem;
+                    -webkit-transition: all 0.3s ease;
+                    transition: all 0.3s ease;
+                }
+                
+                .s3-checkbox.s3-with-label {
+                    padding-left: 20px;
+                    padding-bottom: 13px;
+                }
+                
+                .s3-checkbox>span {
+                    border-radius: 3px;
+                    background: none;
+                    position: absolute;
+                    top: 0px;
+                    left: 0;
+                    height: 18px;
+                    width: 18px;
+                    border: 1px solid #cccccc;
+                }
+                
+                .s3-checkbox>input {
+                    position: absolute;
+                    z-index: -1;
+                    opacity: 0;
+                }
+                
+                .s3-checkbox>input:checked~span {
+                    border: 1px solid #868686;
+                }
+                
+                .s3-checkbox>span:after {
+                    content: '';
+                    position: absolute;
+                    display: none;
+                    top: 50%;
+                    left: 50%;
+                    margin-left: -2px;
+                    margin-top: -6px;
+                    width: 5px;
+                    height: 10px;
+                    border-width: 0 2px 2px 0/*rtl:ignore*/
+                    !important;
+                    -webkit-transform: rotate(45deg)/*rtl:ignore*/
+                    ;
+                    transform: rotate(45deg)/*rtl:ignore*/
+                    ;
+                }
+                
+                .s3-checkbox>input:checked~span:after {
+                    display: block;
+                }
+                
+                .s3-checkbox>span:after {
+                    border: solid #8e8e8e;
+                }

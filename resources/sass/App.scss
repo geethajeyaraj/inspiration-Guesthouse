@@ -1,0 +1,31 @@
+/*!
+ *   S3 Theme
+ *   Author: Selvakumar Sankaravel
+ *	 Website: S3learn
+ */
+
+// Bootstrap
+// ---------------------------------------------------
+@import '~bootstrap/scss/functions';
+@import 'bootstrap-variables';
+@import '~bootstrap/scss/bootstrap';
+// Variables and Mixins
+// ---------------------------------------------------
+@import 'variables';
+@import 'mixins';
+// Core
+// ---------------------------------------------------
+@import 'layout';
+// Components
+// ---------------------------------------------------
+@import 'main-header';
+@import 'main-sidebar';
+@import 'sidebar-mini';
+@import 'control-sidebar';
+@import 'dropdown';
+// Miscellaneous
+// ---------------------------------------------------
+@import 'print';
+@import 'elevation';
+@import 'custom';
+@import 'custom';
